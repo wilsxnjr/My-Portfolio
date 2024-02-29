@@ -1,0 +1,99 @@
+.contact {
+    padding: 6rem 6rem;
+}
+
+.contact .link img {
+    width: 35px;
+}
+
+.contact h2 {
+    color: #7E5ECC;
+    margin-bottom: 0.8rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact h3 {
+    color: #0F172A;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact .links {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: start;
+}
+
+.contact .link a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0F172A;
+    transition: 0.5s;
+}
+
+.contact .link a:hover {
+    transform: translateY(-15%);
+}
+
+.contact .links {
+    font-size: 1.25rem;
+}
+
+@media(max-width: 900px) {
+    .contact {
+        padding: 4rem 4rem;
+    }
+
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 850px) {
+    .contact .links {
+        grid-template-columns: auto;
+        gap: 2rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .contact .links {
+        gap: 1.5rem;
+    }
+
+    .contact {
+        padding: 3rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .contact {
+        padding: 2rem;
+    }
+
+    .contact h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact .links {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .contact .links {
+        font-size: 1.1rem;
+    }
+
+    .contact .link img {
+        width: 30px;
+    }
+}

@@ -1,0 +1,144 @@
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 13.5rem 2.5rem 9.5rem 2.5rem;
+    display: grid;
+    gap: 1.5rem;
+    justify-items: left;
+}
+
+.main h1 {
+    font-size: 5rem;
+    color: #0F172A;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main h1 img {
+    width: 80px;
+}
+
+.main p {
+    font-size: 1.5rem;
+    max-width: 55ch;
+    color: #0F172A;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.redes-menu {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.redes-menu img {
+    width: 45px;
+    transition: 0.5s;
+}
+
+.redes-menu img:hover {
+    transform: translate(-12%, -12%);
+}
+
+abbr.maputo {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+abbr.maputo::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #7E5ECC;
+    left: 0;
+    bottom: 3px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+abbr:hover::after {
+    height: 18px;
+}
+
+@media(max-width: 900px) {
+
+    .main {
+        padding-top: 11rem;
+    }
+
+    .main h1 {
+        font-size: 4rem;
+    }
+
+    .main h1 img  {
+        width: 70px;
+    }
+}
+
+@media(max-width: 800px) {
+    .main {
+        padding-top: 10rem;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+        gap: 0.5rem;
+    }
+
+    .main p {
+        font-size: 1.3rem;
+    }
+
+    .main h1 img  {
+        width: 45px;
+    }
+}
+
+@media(max-width: 800px) {
+    .main {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
+    abbr::after {
+        display: none;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 620px) {
+    .main {
+        padding-bottom: 3rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .main {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .main h1 {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+
+    .main p {
+        font-size: 1.1rem;
+    }
+
+    .main img {
+        width: 40px;
+    }
+}

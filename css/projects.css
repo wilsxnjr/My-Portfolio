@@ -1,0 +1,23 @@
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    height: 300px;
+}
+
+.projects h2 {
+    color: #0F172A;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+@media(max-width: 600px) {
+    .projects h2 {
+        font-size: 1.2rem;
+    }
+
+    .projects {
+        height: 200px;
+    }
+}
