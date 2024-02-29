@@ -128,4 +128,22 @@
     .about h2 {
         font-size: 1.4rem;
     }
+
+    .skill {
+        gap: 1.5rem;
+    }
+
+    .skills {
+        gap: 0.7rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .skill span {
+        font-size: 1rem;
+    }
+
+    .skills img {
+        width: 25px;
+    }
 }
