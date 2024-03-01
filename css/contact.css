@@ -1,5 +1,5 @@
 .contact {
-    padding: 6rem 6rem;
+    padding: 3rem 6rem;
 }
 
 .contact .link img {
@@ -12,6 +12,7 @@
     font-size: 1.7rem;
     font-weight: 800;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 
 .contact h3 {
@@ -21,15 +22,15 @@
 }
 
 .contact .links {
-    display: grid;
+    display: flex;
     gap: 3rem;
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: start;
+    flex-wrap: wrap;
 }
 
 .contact .link a {
     display: flex;
     align-items: center;
+    justify-content: start;
     gap: 0.5rem;
     color: #0F172A;
     transition: 0.5s;
@@ -55,7 +56,6 @@
 
 @media(max-width: 850px) {
     .contact .links {
-        grid-template-columns: auto;
         gap: 2rem;
     }
 }
