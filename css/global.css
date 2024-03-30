@@ -32,4 +32,5 @@ a {
 
 ::-webkit-scrollbar-thumb {
     background: var(--azul-oxford);
+    cursor: grab;
 }
