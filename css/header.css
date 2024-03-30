@@ -1,0 +1,129 @@
+.header-bg {
+    box-shadow: 0 8px 6px -8px #ccc;
+    background: #ffffff;
+}
+
+.header {
+    max-width: 1300px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.header span {
+    color: var(--roxo);
+}
+
+.header a {
+    color: var(--azul-oxford);
+    display: inline-block;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    gap: 0.2rem;
+    font-size: 1.5rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.header .logo img {
+    width: 26px;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.header-menu a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+}
+
+.header-menu a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--roxo);
+    transition: .5s;
+    bottom: 4px;
+    border-radius: 3px;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+.header .menu-hamburguer {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .header-menu a::after {
+        display: none;
+    }
+    .header {
+        gap: 3rem;
+    }
+    .header-menu {
+        gap: 2rem;
+    }
+    .header-menu a {
+        background: #f7f7f7;
+        padding: 8px 12px;
+    }
+    .header-menu a:hover {
+        background: #ccc;
+    }
+}
+
+@media(max-width: 700px) {
+    .header {
+        gap: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .header .header-menu {
+        display: none;
+    }
+    .header .menu-hamburguer {
+        display: block;
+    }
+    .header .menu-hamburguer img {
+        width: 28px;
+    }
+}
+
+@media(max-width: 500px) {
+    .header {
+        gap: 1rem;
+    }
+    .header .logo {
+        font-size: 1.3rem;
+    }
+    .header .logo img {
+        width: 25px;
+    }
+    .header-menu {
+        gap: 1rem;
+    }
+    .header-menu a {
+        font-size: 14px;
+    }
+}

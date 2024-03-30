@@ -1,0 +1,138 @@
+.introducao-bg {
+    height: calc(100vh - 77px);
+    padding-top: 9rem;
+    box-sizing: border-box;
+}
+
+.introducao {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    display: grid;
+    gap: 1.1rem;
+    justify-items: left;
+}
+
+.introducao h1 {
+    font-size: 5rem;
+    color: var(--azul-oxford);
+    font-weight: 700;
+    line-height: 1.2;
+    align-items: center;
+    font-family: "Poppins", Arial, sans-serif;
+    /*margin-bottom: 1rem;*/
+}
+
+.introducao p {
+    font-size: 1.7rem;
+    max-width: 55ch;
+    color: var(--azul-oxford);
+    letter-spacing: 0.4px;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Roboto", Arial, sans-serif;
+    /*margin-bottom: 1.1rem;*/
+}
+
+.introducao span {
+    position: relative;
+    cursor: pointer;
+}
+
+.introducao abbr {
+    text-decoration: none;
+}
+
+.introducao span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 7px;
+    display: block;
+    background: var(--roxo);
+    left: 0;
+    bottom: 3px;
+    z-index: -1;
+    transition: .3s;
+}
+
+.introducao span:hover:after {
+    height: 18px;
+}
+
+.introducao .redes {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 4.5rem;
+}
+
+.introducao .redes img {
+    width: 30px;
+}
+
+.introducao .redes a {
+    transition: .5s;
+}
+
+.introducao .redes a:hover {
+    transform: translate(-12%, -12%);
+}
+
+@media(max-width: 910px) {
+    .introducao-bg {
+        padding-top: 1rem;
+    }
+    .introducao {
+        margin-top: 5rem;
+    }
+    .introducao h1 {
+        font-size: 3.5rem;
+    }
+    .introducao p {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .introducao-bg {
+        height: initial;
+        padding-bottom: 2rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .introducao-bg {
+        padding-bottom: 1rem;
+    }
+    .introducao span::after {
+        display: none;
+    }
+    .introducao {
+        margin-top: 2rem;
+        justify-items: center;
+        text-align: center;
+    }
+    .introducao .btn-cv {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .introducao h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .introducao p {
+        max-width: initial;
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+    .introducao .redes {
+        gap: 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .introducao .redes img {
+        width: 30px;
+    }
+}
