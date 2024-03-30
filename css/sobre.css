@@ -34,7 +34,7 @@
     padding: 0 1rem;
 }
 
-.about img {
+.about img.foto-efeito {
     height: 100%;
     object-fit: cover;
     animation: flutuar 4s ease-in-out infinite;
@@ -52,8 +52,8 @@
 .about-bg h2 {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--azul-oxford);
+    font-weight: 700;
+    color: var(--roxo);
     text-align: center;
     padding-top: 1rem;
 }
@@ -76,7 +76,8 @@
 }
 
 .about .btn-cv {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-family: "Poppins", Arial, sans-serif;
     padding: 0.7rem 1.2rem;
     background: var(--azul-oxford);
@@ -84,12 +85,13 @@
     font-weight: 500;
     border-radius: 4px;
     letter-spacing: 0.5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: .5s;
+    gap: 5px;
 }
 
-.about .btn-cv:hover {
-    box-shadow: 8px 8px 3px #999;
+.about .btn-cv img {
+    width: 22px;
 }
 
 .about .skills {
@@ -145,5 +147,14 @@
     .about p {
         max-width: initial;
         font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .about .btn-cv img {
+        width: 20px;
+    }
+    .about .btn-cv  {
+        font-size: 0.9rem;
     }
 }
