@@ -1,0 +1,44 @@
+.footer-bg {
+    background: var(--azul-oxford);
+}
+
+.footer {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer p {
+    color: var(--branco);
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}
+
+.footer .redes-footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer .redes-footer img {
+    width: 20px;
+}
+
+@media(max-width: 650px) {
+    .footer {
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    .footer p {
+        font-size: 0.8rem;
+    }
+    .footer .redes-footer img {
+        width: 16px;
+    }
+}
