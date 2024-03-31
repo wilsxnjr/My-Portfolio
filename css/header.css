@@ -16,10 +16,6 @@
     font-family: "Poppins";
 }
 
-.header span {
-    color: var(--roxo);
-}
-
 .header a {
     color: var(--azul-oxford);
     display: inline-block;
@@ -103,15 +99,19 @@
     }
     .header .menu-hamburguer {
         display: block;
+        cursor: pointer;
+        padding: 0.5rem;
     }
     .header .menu-hamburguer img {
-        width: 28px;
+        width: 26px;
     }
 }
 
 @media(max-width: 500px) {
     .header {
         gap: 1rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
     }
     .header .logo {
         font-size: 1.3rem;
