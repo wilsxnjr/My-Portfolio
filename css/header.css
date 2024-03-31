@@ -1,128 +1,78 @@
-.header-bg {
-    box-shadow: 0 8px 6px -8px #ccc;
-    background: #ffffff;
-}
-
-.header {
+#header {
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.25rem 2.2rem;
+    height: 77px;
+    padding: 2rem 2rem;
     box-sizing: border-box;
-    font-family: "Poppins";
+    justify-content: space-between;
+    box-shadow: 0 8px 6px -8px var(--cinza-s);
+    font-family: "Poppins", sans-serif;
 }
 
-.header a {
-    color: var(--azul-oxford);
-    display: inline-block;
-}
-
-.header .logo {
+#logo {
     display: flex;
-    align-items: center;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    gap: 0.2rem;
     font-size: 1.5rem;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    align-items: center;
+    letter-spacing: 0.2px;
+    gap: 3px;
+    color: var(--azul-oxford);
+    font-weight: 500;
 }
 
-.header .logo img {
+#logo img {
     width: 26px;
 }
 
-.header-menu {
+#menu {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
-.header-menu a {
+#menu a {
+    display: block;
+    padding: .5rem 0;
     font-size: 1.125rem;
     font-weight: 500;
+    color: var(--azul-oxford);
     position: relative;
-    padding: 5px 0;
 }
 
-.header-menu a::after {
-    content: "";
+#menu a::after {
     position: absolute;
+    content: "";
     display: block;
     width: 0;
     height: 3px;
     background: var(--roxo);
-    transition: .5s;
-    bottom: 4px;
     border-radius: 3px;
+    bottom: 5px;
+    transition: .3s;
 }
 
-.header-menu a:hover::after {
+#menu a:hover::after {
     width: 100%;
 }
 
-.header .menu-hamburguer {
+#btn-mobile {
     display: none;
-}
-
-@media(max-width: 900px) {
-    .header-menu a::after {
-        display: none;
-    }
-    .header {
-        gap: 3rem;
-    }
-    .header-menu {
-        gap: 2rem;
-    }
-    .header-menu a {
-        background: #f7f7f7;
-        padding: 8px 12px;
-    }
-    .header-menu a:hover {
-        background: #ccc;
-    }
+    padding: 0.5rem;
 }
 
 @media(max-width: 700px) {
-    .header {
-        gap: 2rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-    
-    .header .header-menu {
-        display: none;
-    }
-    .header .menu-hamburguer {
+    #btn-mobile {
         display: block;
-        cursor: pointer;
-        padding: 0.5rem;
     }
-    .header .menu-hamburguer img {
-        width: 26px;
-    }
-}
-
-@media(max-width: 500px) {
-    .header {
-        gap: 1rem;
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
-    }
-    .header .logo {
+    #logo {
         font-size: 1.3rem;
     }
-    .header .logo img {
-        width: 25px;
+    #logo img {
+        width: 24px;
     }
-    .header-menu {
-        gap: 1rem;
+    #menu {
+        display: none;
     }
-    .header-menu a {
-        font-size: 14px;
+    #nav.active #menu {
+        display: flex;
     }
 }
