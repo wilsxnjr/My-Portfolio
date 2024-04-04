@@ -94,7 +94,7 @@
 }
 
 .about .btn-cv:hover {
-    background: var(--roxo-2);
+    background: var(--roxo);
 }
 
 .about .btn-cv img {
@@ -125,10 +125,16 @@
     padding: 0.5rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+    transition: 0.4s;
 }
 
 .about .skills img {
     width: 22px;
+}
+
+.about .skills .skill:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 @media(max-width: 900px) {

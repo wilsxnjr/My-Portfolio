@@ -29,6 +29,11 @@
 
 .footer .redes-footer img {
     width: 20px;
+    transition: 0.4s;
+}
+
+.footer .redes-footer img:hover {
+    transform: scale(1.2);
 }
 
 @media(max-width: 650px) {
