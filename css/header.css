@@ -57,6 +57,11 @@
 #btn-mobile {
     display: none;
     padding: 0.4rem;
+    cursor: pointer;
+    /*box-shadow: 2px 2px 3px var(--azul-oxford);
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid var(--azul-oxford);*/
 }
 
 @media(max-width: 700px) {
