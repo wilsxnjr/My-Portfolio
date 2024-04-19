@@ -1,8 +1,13 @@
-const btnMobile = document.getElementById('btn-mobile');
-
-function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+function toggleMode() {
+    if(menu.style.display == 'block') {
+        menu.style.display = 'none'
+    } else {
+        menu.style.display = 'block'
+    }
 }
 
-btnMobile.addEventListener('click', toggleMenu);
+/*if(html.classList.contains('light')) {
+        html.classList.remove('light')
+    } else {
+        html.classList.add('light')
+    }*/

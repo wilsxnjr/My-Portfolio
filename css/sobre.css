@@ -7,8 +7,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
     align-items: center;
-    gap: 3rem;
-    padding-bottom: 2rem;
+    gap: 1rem;
     padding-top: 1rem;
 }
 
@@ -23,8 +22,8 @@
 .about .intro-shadow {
     display: grid;
     gap: 1rem;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px var(--cinza-s);
+    /*border-radius: 20px;
+    box-shadow: 5px 5px 15px var(--cinza-s);*/
     justify-items: center;
     margin-top: 2rem;
     padding: 2.5rem 2rem;
@@ -70,8 +69,8 @@
 
 .about p {
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 1.2rem;
-    max-width: 45ch;
+    font-size: 1.25rem;
+    max-width: 50ch;
     letter-spacing: 0.4px;
     line-height: 1.5;
     color: var(--azul-oxford);
@@ -113,28 +112,6 @@
     font-weight: 500;
     letter-spacing: 0.3px;
     font-family: "Roboto";
-}
-
-.about .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-}
-
-.about .skills .skill {
-    padding: 0.5rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-.about .skills img {
-    width: 22px;
-}
-
-.about .skills .skill:hover {
-    transform: scale(1.2);
-    cursor: pointer;
 }
 
 @media(max-width: 900px) {
@@ -183,5 +160,8 @@
     }
     .about .btn-cv  {
         font-size: 0.9rem;
+    }
+    .about .intro-shadow {
+        padding: 0rem;
     }
 }
