@@ -6,7 +6,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     box-shadow: 0 8px 6px -8px var(--cinza-s);
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
 }
 
 #logo {
@@ -16,7 +16,9 @@
     letter-spacing: 0.2px;
     gap: 3px;
     color: var(--azul-oxford);
+    line-height: 1.5;
     font-weight: 500;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 #logo img {
@@ -32,7 +34,7 @@
 #menu a {
     display: block;
     padding: .5rem 0;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--azul-oxford);
     position: relative;

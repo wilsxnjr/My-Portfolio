@@ -68,7 +68,7 @@
 }
 
 .about p {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.25rem;
     max-width: 50ch;
     letter-spacing: 0.4px;
@@ -80,7 +80,7 @@
 .about .btn-cv {
     display: flex;
     align-items: center;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Titillium Web", sans-serif;
     padding: 0.7rem 1.2rem;
     background: var(--azul-oxford);
     color: var(--branco);
@@ -90,6 +90,7 @@
     font-size: 1.1rem;
     transition: .5s;
     gap: 5px;
+    margin-top: 0.3rem;
 }
 
 .about .btn-cv:hover {

@@ -1,0 +1,122 @@
+.projects {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-bg h2 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--azul-oxford);
+    text-align: center;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.project-1, .project-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-family: "Titillium Web", sans-serif;
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.project-1 h3, .project-2 h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--azul-oxford);
+}
+
+.project-1 p, .project-2 p {
+    font-size: 1.05rem;
+    letter-spacing: 0.4px;
+}
+
+.projects .links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-1 a, .project-2 a {
+    display: flex;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+    padding: 0.5rem 1rem;
+    background: var(--azul-oxford);
+    color: var(--branco);
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    transition: .5s;
+    gap: 5px;
+    margin-top: 0.3rem;
+}
+
+.project-1 a:hover, .project-2 a:hover {
+    background: var(--roxo);
+}
+
+.project-1 a img, .project-2 a img {
+    width: 22px;
+}
+
+.project-1 .project-conteudo {
+    display: grid;
+    align-content: center;
+    justify-items: left;
+    gap: 0.5rem;
+}
+
+.project-2 .project-conteudo {
+    display: grid;
+    align-content: center;
+    justify-items: right;
+    gap: 0.5rem;
+    text-align: right;
+}
+
+.project-img {
+    overflow: hidden;
+}
+
+.project-img img {
+    transition: 0.3s;
+}
+
+.project-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .project-1, .project-2 {
+        grid-template-columns: 1fr;
+    }
+    .project-2 .project-img {
+        grid-row: 1;
+    }
+    .project-2 .project-conteudo {
+        display: grid;
+        align-content: center;
+        justify-items: left;
+        gap: 0.5rem;
+        text-align: left;
+    }
+    .project-1, .project-2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .project-1 a, .project-2 a {
+        font-size: 0.9rem;
+    }
+    .project-1 a img, .project-2 a img  {
+        width: 20px;
+    }
+}
