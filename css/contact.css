@@ -38,7 +38,7 @@
     font-size: 1rem;
     gap: 10px;
     align-items: center;
-    border: 1px solid var(--azul-oxford);
+    border: 1px solid #e1e1e1;
     padding: 0.8rem 1.6rem;
     border-radius: 4px;
     justify-content: space-between;
