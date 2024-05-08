@@ -13,7 +13,7 @@
     color: var(--azul-oxford);
     padding-top: 1rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contact-bg {
@@ -39,11 +39,11 @@
     gap: 10px;
     align-items: center;
     border: 1px solid var(--azul-oxford);
-    padding: 0.8rem 1.4rem;
+    padding: 0.8rem 1.6rem;
     border-radius: 4px;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 270px;
+    width: 300px;
 }
 
 .contact a span.titulo {
