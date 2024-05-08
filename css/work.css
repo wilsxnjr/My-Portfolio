@@ -1,5 +1,5 @@
 .projects {
-    max-width: 1000px;
+    max-width: 1080px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -34,7 +34,7 @@
 }
 
 .project-1 p, .project-2 p {
-    font-size: 1.05rem;
+    font-size: 1.125rem;
     letter-spacing: 0.4px;
 }
 
@@ -118,5 +118,8 @@
     }
     .project-1 a img, .project-2 a img  {
         width: 20px;
+    }
+    .project-1 p, .project-2 p {
+        font-size: 1rem;
     }
 }

@@ -1,0 +1,77 @@
+.contact {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.contact-bg h2 {
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--azul-oxford);
+    padding-top: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contact-bg {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.contact .links-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+    color: var(--azul-oxford);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid var(--azul-oxford);
+    padding: 0.8rem 1.4rem;
+    border-radius: 4px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 270px;
+}
+
+.contact a span.titulo {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contact a img {
+    width: 45px;
+}
+
+.contact a img.arrow {
+    width: 25px;
+}
+
+.auxiliar-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact a div.titulos {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 700px) {
+    .contact .links-contact {
+        gap: 1rem;
+    }
+}
