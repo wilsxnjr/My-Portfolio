@@ -105,4 +105,8 @@
     #menu a:hover::after {
         display: none;
     }
+    button {
+        background: none;
+        border: none;
+    }
 }
