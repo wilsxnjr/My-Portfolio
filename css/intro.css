@@ -1,6 +1,6 @@
 .introducao-bg {
-    height: calc(100vh - 77px);
-    padding-top: 9rem;
+    height: 100vh;
+    padding-top: calc(9rem + 77px);
     box-sizing: border-box;
 }
 

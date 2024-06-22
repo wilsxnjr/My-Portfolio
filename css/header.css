@@ -5,8 +5,12 @@
     padding: 2.5rem 4rem;
     box-sizing: border-box;
     justify-content: space-between;
-    /*box-shadow: 0 8px 6px -8px var(--cinza-s);*/
+    box-shadow: 0 8px 6px -8px var(--cinza-s);
     font-family: "Poppins", sans-serif;
+    position: fixed;
+    width: 100%;
+    background: var(--branco);
+    z-index: 1000;
 }
 
 #logo {
@@ -80,7 +84,7 @@
     }
     #header {
         padding: 2rem;
-        position: relative;
+        position: fixed;
         /*box-shadow: none;*/
     }
     #logo {
