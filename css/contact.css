@@ -58,4 +58,10 @@
     .contact {
         padding: 0 1.5rem;
     }
+    .contact img {
+        width: 22px;
+    }
+    .contact a {
+        font-size: 1.05rem;
+    }
 }
