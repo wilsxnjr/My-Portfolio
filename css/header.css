@@ -78,7 +78,7 @@
     border: 1px solid var(--azul-oxford);*/
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     #btn-mobile {
         display: block;
     }
