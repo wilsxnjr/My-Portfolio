@@ -127,8 +127,8 @@
         padding-left: 1rem;
         padding-right: 1rem;
         gap: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
     .project-1 a, .project-2 a {
         font-size: 0.9rem;
