@@ -50,6 +50,15 @@
     }
 }
 
+@keyframes flutuar-i {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
 .about-bg h2 {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 1.5rem;
@@ -80,11 +89,11 @@
 .about .btn-cv {
     display: flex;
     align-items: center;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0.7rem 1.2rem;
     background: var(--azul-oxford);
     color: var(--branco);
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 4px;
     letter-spacing: 0.5px;
     font-size: 1.1rem;
@@ -97,8 +106,13 @@
     background: var(--roxo);
 }
 
+.about .btn-cv.btn-cv:hover img {
+    animation: flutuar-i 2.5s ease-in-out infinite;
+}
+
 .about .btn-cv img {
     width: 22px;
+    transition: all .3s;
 }
 
 .about .skills-section {
