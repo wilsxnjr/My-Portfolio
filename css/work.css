@@ -24,6 +24,9 @@
     margin-bottom: 2.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding: 2rem;
+    background: var(--branco);
+    border-radius: 8px;
 }
 
 .project-1 h3, .project-2 h3 {
@@ -55,7 +58,7 @@
     letter-spacing: 0.4px;
     font-size: 1rem;
     transition: .5s;
-    gap: 4px;
+    gap: 3px;
     margin-top: 0.3rem;
 }
 
@@ -70,7 +73,7 @@
 }
 
 .project-1 a:hover img.arrow, .project-2 a:hover img.arrow {
-    transform: translate(12%, -12%);
+    transform: translate(15%, -15%);
 }
 
 .project-1 .project-conteudo {
@@ -90,6 +93,7 @@
 
 .project-img {
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .project-img img {
@@ -104,6 +108,9 @@
 @media(max-width: 700px) {
     .project-1, .project-2 {
         grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1.5rem 0.8rem;
     }
     .project-2 .project-img {
         grid-row: 1;
