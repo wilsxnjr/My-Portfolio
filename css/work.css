@@ -89,7 +89,6 @@
     align-content: center;
     justify-items: center;
     gap: 0.5rem;
-    text-align: right;
 }
 
 .project-img {
@@ -119,13 +118,16 @@
     .project-2 .project-conteudo {
         display: grid;
         align-content: center;
-        justify-items: left;
+        justify-items: center;
         gap: 0.5rem;
-        text-align: left;
+        text-align: center;
     }
     .project-1, .project-2 {
         padding-left: 2rem;
         padding-right: 2rem;
+        gap: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     .project-1 a, .project-2 a {
         font-size: 0.9rem;
