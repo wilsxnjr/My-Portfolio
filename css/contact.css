@@ -25,7 +25,6 @@
     display: flex;
     gap: 2rem;
     justify-content: left;
-    flex-direction: column;
 }
 
 .contact .auxiliar-link {
@@ -68,7 +67,7 @@
 
 @media(max-width: 700px) {
     .contact .links-contact {
-        gap: 1rem;
+        gap: 1.8rem;
     }
     .contact {
         padding: 0 1.5rem;
