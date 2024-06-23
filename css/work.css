@@ -39,6 +39,7 @@
 .project-1 p, .project-2 p {
     font-size: 1.125rem;
     letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .projects .links {
@@ -79,14 +80,14 @@
 .project-1 .project-conteudo {
     display: grid;
     align-content: center;
-    justify-items: left;
+    justify-items: center;
     gap: 0.5rem;
 }
 
 .project-2 .project-conteudo {
     display: grid;
     align-content: center;
-    justify-items: right;
+    justify-items: center;
     gap: 0.5rem;
     text-align: right;
 }
