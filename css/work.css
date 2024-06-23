@@ -95,6 +95,7 @@
 .project-img {
     overflow: hidden;
     border-radius: 8px;
+    box-shadow: 4px 6px 16px #666;
 }
 
 .project-img img {
@@ -128,7 +129,7 @@
         padding-right: 1rem;
         gap: 1.5rem;
         padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
     }
     .project-1 a, .project-2 a {
         font-size: 0.9rem;
