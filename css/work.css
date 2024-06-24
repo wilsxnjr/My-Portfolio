@@ -25,7 +25,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding: 2rem;
-    background: #F2F3F5;
+    background: #F7F7F7;
     border-radius: 8px;
 }
 
@@ -38,9 +38,10 @@
 
 .project-1 p, .project-2 p {
     font-size: 1.125rem;
-    letter-spacing: 0.4px;
     text-align: center;
-    max-width: 40ch;
+    max-width: 35ch;
+    line-height: 28px;
+    font-weight: 400;
 }
 
 .projects .links {
@@ -51,14 +52,13 @@
 .project-1 a, .project-2 a {
     display: flex;
     align-items: center;
-    font-family: "Poppins", sans-serif;
-    padding: 0.6rem 0.9rem;
+    font-family: "Mulish", sans-serif;
+    padding: 0.6rem 1.2rem;
     background: var(--azul-oxford);
     color: var(--branco);
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 4px;
-    letter-spacing: 0.4px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: .5s;
     gap: 3px;
     margin-top: 0.3rem;
