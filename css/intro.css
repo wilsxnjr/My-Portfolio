@@ -94,15 +94,21 @@
     padding: 4px 8px;
     font-weight: 400;
     left: 50%;
+    top: 38px;
     transform: translateX(-50%);
     white-space: nowrap;
     visibility: hidden;
-    transition: .3s;
+    transition: .5s;
     color: var(--branco);
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px); 
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 }
 
 .capital:hover::after {
     visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 @media(max-width: 910px) {
@@ -131,7 +137,7 @@
     .introducao-bg {
         padding-bottom: 1rem;
     }
-    .introducao span::after {
+    .introducao .capital-auxiliar::after {
         display: none;
     }
     .introducao {
