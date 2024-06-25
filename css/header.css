@@ -1,17 +1,31 @@
 #header {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header {
     display: flex;
     align-items: center;
-    height: 77px;
+    height: 70px;
     padding: 2.5rem 4rem;
     box-sizing: border-box;
     justify-content: space-between;
     box-shadow: 0 8px 6px -8px var(--cinza-s);
     font-family: "Poppins", sans-serif;
     position: fixed;
-    width: 100%;
+    width: 90%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 #logo {
