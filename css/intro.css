@@ -29,23 +29,19 @@
     font-size: 1.7rem;
     max-width: 55ch;
     color: var(--azul-oxford);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
     line-height: 1.8;
     font-weight: 400;
     font-family: "Mulish", Arial, sans-serif;
     /*margin-bottom: 1.1rem;*/
 }
 
-.introducao span {
+.introducao .capital-auxiliar {
     position: relative;
     cursor: pointer;
 }
 
-.introducao abbr {
-    text-decoration: none;
-}
-
-.introducao span::after {
+.introducao .capital-auxiliar::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -56,10 +52,6 @@
     bottom: 3px;
     z-index: -1;
     transition: .3s;
-}
-
-.introducao span:hover:after {
-    height: 18px;
 }
 
 .introducao .redes {
@@ -85,6 +77,32 @@
 
 .introducao .redes a:hover {
     transform: translate(-12%, -12%);
+}
+
+.capital {
+    position: relative;
+    cursor: pointer;
+}
+
+.capital::after {
+    position: absolute;
+    content: "Capital of Mozambique";
+    font-size: 0.8rem;
+    display: flex;
+    background: var(--roxo);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 400;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    transition: .3s;
+    color: var(--branco);
+}
+
+.capital:hover::after {
+    visibility: visible;
 }
 
 @media(max-width: 910px) {
