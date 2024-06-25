@@ -9,7 +9,8 @@
     font-family: "Poppins", sans-serif;
     position: fixed;
     width: 100%;
-    background: var(--branco);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
