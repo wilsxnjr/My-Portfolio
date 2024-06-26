@@ -59,7 +59,7 @@
     align-items: center;
     gap: 1.5rem;
     padding-top: 4.5rem;
-    z-index: -1;
+    z-index: 0;
 }
 
 .introducao .redes a {
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .introducao .redes a {
