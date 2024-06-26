@@ -58,7 +58,7 @@
     color: var(--branco);
     font-weight: 500;
     border-radius: 4px;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     transition: .5s;
     gap: 6px;
     margin-top: 0.3rem;
@@ -72,7 +72,7 @@
     transition: .3s;
 }
 
-.project-1 a:hover i.fa-up-right-from-square, .project-2 a:hover i.fa-up-right-from-square{
+.project-1 a:hover i.bi-box-arrow-up-right, .project-2 a:hover i.bi-box-arrow-up-right {
     transform: translate(15%, -15%);
 }
 
@@ -130,7 +130,7 @@
         padding-bottom: 2rem;
     }
     .project-1 a, .project-2 a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .project-1 a img, .project-2 a img  {
         width: 20px;

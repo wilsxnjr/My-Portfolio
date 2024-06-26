@@ -36,6 +36,10 @@
     transform: scale(1.2);
 }
 
+.footer i {
+    color: var(--roxo);
+}
+
 @media(max-width: 650px) {
     .footer {
         gap: 2rem;
