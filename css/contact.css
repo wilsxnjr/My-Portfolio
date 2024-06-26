@@ -82,6 +82,9 @@
     .contact {
         font-size: 0.9rem;
     }
+    .titulo {
+        font-size: 1.1rem;
+    }
     .links-contact {
         justify-content: left;
     }
