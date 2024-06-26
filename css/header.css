@@ -3,6 +3,7 @@
     margin-right: auto;
     box-sizing: border-box;
     position: relative;
+    width: 100%;
 }
 
 .header {
@@ -26,6 +27,7 @@
     border: 1px solid #fff;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+    z-index: 1000;
 }
 
 #logo {
@@ -98,9 +100,11 @@
         display: block;
     }
     #header {
-        padding: 2rem;
         position: fixed;
         /*box-shadow: none;*/
+    }
+    .header {
+        padding: 2rem 2rem;
     }
     #logo {
         font-size: 1.3rem;

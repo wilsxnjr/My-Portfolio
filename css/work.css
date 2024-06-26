@@ -60,21 +60,19 @@
     border-radius: 4px;
     font-size: 1.1rem;
     transition: .5s;
-    gap: 3px;
+    gap: 6px;
     margin-top: 0.3rem;
-}
-
-.project-1 a img, .project-2 a img {
-    width: 22px;
-    position: relative;
-    transition: all .3s;
 }
 
 .project-1 a:hover, .project-2 a:hover {
     background: var(--roxo);
 }
 
-.project-1 a:hover img.arrow, .project-2 a:hover img.arrow {
+.project-1 a i, .project-2 a i {
+    transition: .3s;
+}
+
+.project-1 a:hover i.fa-up-right-from-square, .project-2 a:hover i.fa-up-right-from-square{
     transform: translate(15%, -15%);
 }
 

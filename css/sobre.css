@@ -33,6 +33,7 @@
 .about .about-img {
     box-sizing: border-box;
     padding: 0 1rem;
+    z-index: -1;
 }
 
 .about img.foto-efeito {
