@@ -84,7 +84,30 @@
     width: 27px;
 }
 
-.introducao .redes a::after {
+.introducao .redes a.git::after {
+    position: absolute;
+    font-family: "Mulish";
+    content: "Github";
+    font-size: 0.8rem;
+    display: flex;
+    background: var(--azul-oxford);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 400;
+    left: 50%;
+    bottom: 55px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    transition: .5s;
+    color: var(--branco);
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px); 
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    box-shadow: 0 8px 6px -8px var(--azul-oxford);
+}
+
+.introducao .redes a.lk::after {
     position: absolute;
     font-family: "Mulish";
     content: "Linkedin";
