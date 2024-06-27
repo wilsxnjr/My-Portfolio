@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     font-family: "Mulish", sans-serif;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
     background: var(--azul-oxford);
     color: var(--branco);
     font-weight: 500;
@@ -65,18 +65,18 @@
 }
 
 .project-1 a img, .project-2 a img {
-    width: 23px;
+    width: 22px;
 }
 
 .project-1 a:hover, .project-2 a:hover {
     background: var(--roxo);
 }
 
-.project-1 a svg, .project-2 a svg {
+.project-1 a .view, .project-2 a .view {
     transition: .3s;
 }
 
-.project-1 a:hover svg, .project-2 a:hover svg {
+.project-1 a:hover .view, .project-2 a:hover .view {
     transform: translate(15%, -15%);
 }
 
@@ -134,7 +134,7 @@
         padding-bottom: 2rem;
     }
     .project-1 a, .project-2 a {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
     .project-1 a img, .project-2 a img  {
         width: 20px;
