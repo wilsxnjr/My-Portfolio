@@ -72,11 +72,11 @@
     background: var(--roxo);
 }
 
-.project-1 a i, .project-2 a i {
+.project-1 a svg, .project-2 a svg {
     transition: .3s;
 }
 
-.project-1 a:hover i.bi-box-arrow-up-right, .project-2 a:hover i.bi-box-arrow-up-right {
+.project-1 a:hover svg, .project-2 a:hover svg {
     transform: translate(15%, -15%);
 }
 
