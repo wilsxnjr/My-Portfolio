@@ -47,6 +47,7 @@
     color: var(--azul-oxford);
     position: relative;
     letter-spacing: 0.2px;
+    transition: .3s;
 }
 
 #menu a::after {
