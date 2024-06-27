@@ -64,6 +64,10 @@
     margin-top: 0.3rem;
 }
 
+.project-1 a img, .project-2 a img {
+    width: 23px;
+}
+
 .project-1 a:hover, .project-2 a:hover {
     background: var(--roxo);
 }
