@@ -76,6 +76,11 @@
     cursor: pointer;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 @media(max-width: 800px) {
     #btn-mobile {
         display: block;
@@ -112,8 +117,7 @@
     #menu a:hover::after {
         display: none;
     }
-    button {
-        background: none;
-        border: none;
+    #menu.activo {
+        display: block;
     }
 }

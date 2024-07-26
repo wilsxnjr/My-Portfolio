@@ -1,13 +1,8 @@
-function toggleMode() {
-    if(menu.style.display == 'block') {
-        menu.style.display = 'none'
-    } else {
-        menu.style.display = 'block'
-    }
+const btnMobile = document.querySelector('#btn-mobile');
+
+function mobile() {
+    const menu = document.querySelector('#menu');
+    menu.classList.toggle('activo');
 }
 
-/*if(html.classList.contains('light')) {
-        html.classList.remove('light')
-    } else {
-        html.classList.add('light')
-    }*/
+btnMobile.addEventListener('click', mobile)
